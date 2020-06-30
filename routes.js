@@ -12,7 +12,7 @@ routes.get('/projetos', projetos.get);
 routes.post('/projetos', projetos.post);
 
 routes.get('/addProjetos', addproj.getProjetos);
-routes.get('/addProjetos/projetos', addproj.getAdd);
+routes.get('/adicionarProjetos', addproj.getAdd);
 routes.get('/addProjetos/sobre', addproj.getAbout);
 
 routes.get('/projetos/modal', projetos.modal);
