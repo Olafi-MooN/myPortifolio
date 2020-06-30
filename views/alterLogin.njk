@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Altere a Seu login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <form action="/login/alterarSenha" method="post">
+        <h2>Alterar login e senha</h2>
+        <i class="material-icons" id="panel">admin_panel_settings</i>
+        <h3>Usuário</h3>
+        <div>
+            <i class="material-icons" id="icon">account_box</i>
+            <input type="text" name="user" id="user" placeholder="Digite o seu novo usuário">
+        </div>
+        <h3>Senha</h3>
+        <div>
+            <i class="material-icons" id="icon">lock</i>
+            <input type="password" name="password" id="password" placeholder="Digite a sua nova Senha">
+        </div>
+    <input value="Alterar" type="submit" id="btnEntrar">
+    </form>
+{% endblock %}

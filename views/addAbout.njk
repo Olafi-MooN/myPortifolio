@@ -1,0 +1,72 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Adicionar projetos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form method="POST" action="/">
+            <section>
+                <h3>Foto de Perfil</h3>
+                <div>
+                    <i class="material-icons" id="icon">
+                        add_photo_alternate</i>
+                    <input type="text" name="avatar_url" placeholder="Coloque a url da imagem">
+                </div>
+
+                <h3>Nome</h3>
+                <div>
+                    <i class="material-icons" id="icon">title</i>
+                    <input type="text" name="name" placeholder="Titulo">
+                </div>
+
+                <h3>Qual sua função?</h3>
+                <div>
+                    <i class="material-icons" id="icon">work</i>
+                    <input type="text" name="role" placeholder="Objetivo">
+                </div>
+                <h3>Descrição completa</h3>
+                <div>
+                    <i class="material-icons" id="icon">description</i>
+                    <input type="text" name="description" placeholder="Descreva o projeto">
+                </div>
+                <h3>Rede sociais</h3>
+                <div class="lsociais">
+                    <div class="separa">
+                        <h2>Nome da Rede Social</h2>
+                        <div>
+                            <i class="material-icons" id="icon">laptop</i>
+                            <input type="text" name="redes" placeholder="Nome da rede social">
+                        </div>
+                        <div>
+                            <i class="material-icons" id="icon">laptop</i>
+                            <input type="text" name="redes2" placeholder="Nome da rede social">
+                        </div>
+                        <div>
+                            <i class="material-icons" id="icon">laptop</i>
+                            <input type="text" name="redes3" placeholder="Nome da rede social">
+                        </div>
+                    </div>
+                    <div class="separa">
+                        <h2>link da Rede Social</h2>
+                        <div>
+                            <i class="material-icons" id="icon">link</i>
+                            <input type="text" name="redes" placeholder="Link da sua rede social">
+                        </div>
+                        <div>
+                            <i class="material-icons" id="icon">link</i>
+                            <input type="text" name="redes2" placeholder="Link da sua rede social">
+                        </div>
+                        <div>
+                            <i class="material-icons" id="icon">link</i>
+                            <input type="text" name="redes3" placeholder="Link da sua rede social">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="btn">submit</button>
+            </section>
+        </form>
+    </div>
+{% endblock %}

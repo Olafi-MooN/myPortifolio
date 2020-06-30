@@ -1,0 +1,18 @@
+{
+  "avatar_url": "img/perfil.jpg",
+  "name": "Alef Santos Soares",
+  "role": "Aluno - UNIBH",
+  "description": "Programador Full-Stack, trabalhando com as melhores tecnologias (Javascript, nodeJS, ReactJS, React-Native, Html e Css)",
+  "redes": [
+    "Instagram",
+    "https://www.instagram.com/_developerplus/?hl=pt-br"
+  ],
+  "redes2": [
+    "GitHub",
+    "https://github.com/Olafi-MooN/DisasterBook"
+  ],
+  "redes3": [
+    "Linkdin",
+    "https://www.linkedin.com/in/alef-santos-soares-a28715193/"
+  ]
+}

@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div id="wrapper">
+        <img src="{{ about.avatar_url }}" alt="{{ about.name }}">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.description }}</p>
+    </div>
+    <div class="links" id="links-footer">
+        <a href="{{about.redes[1]}}" target="_blank">{{ about.redes[0] }}</a>
+        <a href="{{about.redes2[1]}}" target="_blank">{{ about.redes2[0] }}</a>
+        <a href="{{about.redes3[1]}}" target="_blank">{{ about.redes3[0] }}</a>
+    </div>
+{% endblock %}
