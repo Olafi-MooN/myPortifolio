@@ -3,6 +3,7 @@ const routes = express.Router();
 const projetos = require('./projetos');
 const sobre = require('./sobre');
 const login = require('./login');
+const addproj = require('./addproj');
 
 routes.get('/', sobre.get);
 routes.post('/', sobre.post);
@@ -10,9 +11,9 @@ routes.post('/', sobre.post);
 routes.get('/projetos', projetos.get);
 routes.post('/projetos', projetos.post);
 
-routes.get('/addProjetos', projetos.getProjetos);
-routes.get('/addProjetos/projetos', projetos.getAdd);
-routes.get('/addProjetos/sobre', projetos.getAbout);
+routes.get('/addProjetos', addproj.getProjetos);
+routes.get('/addProjetos/projetos', addproj.getAdd);
+routes.get('/addProjetos/sobre', addproj.getAbout);
 
 routes.get('/projetos/modal', projetos.modal);
 

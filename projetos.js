@@ -3,10 +3,6 @@ const data = require('./data.json');
 
 exports.get = (req, res) => res.render('projetos', { projetos: data.projects });
 
-exports.getProjetos = (req, res) =>  res.render('mainProjetos');
-exports.getAdd = (req, res) =>  res.render('addProjetos');
-exports.getAbout = (req, res) => res.render('addAbout');
-
 exports.post = (req, res) => {
     const keys = Object.keys(req.body);
     for(key of keys){
