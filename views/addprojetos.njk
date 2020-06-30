@@ -9,7 +9,34 @@
     <div class="container">
         <form method="POST" action="/projetos">
         <section>
-            
+            <h3>Adicione uma imagem</h3>
+            <div>
+                <i class="material-icons" id="icon">
+                    add_photo_alternate</i>
+                <input type="text" name="img" placeholder="Coloque a url da imagem">
+            </div>
+
+            <h3>Informe um titulo</h3>
+            <div>
+                <i class="material-icons" id="icon">title</i>
+                <input type="text" name="title" placeholder="Titulo" maxlength="50">
+            </div>
+
+            <h3>Informe um objetivo</h3>
+            <div>
+                <i class="material-icons" id="icon">arrow_right</i>
+                <input type="text" name="objective" placeholder="Objetivo" maxlength="12">
+            </div>
+            <h3>Descrição completa</h3>
+            <div>
+                <i class="material-icons" id="icon">description</i>
+                <input type="text" name="description" placeholder="Descreva o projeto">
+            </div>
+            <h3>Informe um criador</h3>
+            <div>
+                <i class="material-icons" id="icon">create</i>
+                <input type="text" name="creator" placeholder="Nome do criador" maxlength="12">
+            </div>
             <button type="submit" id="btnEntrar">Enviar</Button>
             </section>
         </form>
