@@ -19,7 +19,7 @@ routes.get('/projetos/modal', projetos.modal);
 
 routes.get('/login', login.get);
 routes.post('/login', login.post);
-routes.get('/login/alterarSenha', login.getLogin);
+routes.get('/login/alterarSenha', addproj.getLogin);
 routes.post('/login/alterarSenha', login.postLogin);
 
 module.exports = routes;

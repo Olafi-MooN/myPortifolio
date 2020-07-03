@@ -1,5 +1,6 @@
 const fs = require('fs');
 const login = require('./login.json');
+var confirmar = false;
 
 exports.get = (req, res) => {
     res.render('login') 
@@ -9,13 +10,14 @@ exports.post = (req, res) => {
     const { user, password } = req.body;
 
     if (user === login.user && password === login.password) {
-        return res.render('mainProjetos');
+        confirmar = true;
+        return (
+            confirmar,
+            exports.confirmation = confirmar,
+            res.render('mainProjetos')
+        )
     }
     return res.send('Usuario e senha incorretos');
-}
-
-exports.getLogin = (req, res) => {
-    return res.render('alterLogin');
 }
 
 exports.postLogin = (req, res) => {
