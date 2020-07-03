@@ -5,7 +5,7 @@ exports.getProjetos = (req, res) =>  {
     return res.send('Você não realizou login');
 }
 exports.getAdd = (req, res) =>  {
-    if (confirmation.confirmation) return res.render('addprojetos');
+    if (confirmation.confirmation) return res.render('adprojetos');
     return res.send('Você não realizou login');
 }
 exports.getAbout = (req, res) => {
