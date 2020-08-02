@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="article.css">
+{% endblock head %}
+
+{% block content %}
+{% for lists in list %}
+    <div class="conteudo" >
+        <h1>{{lists}}</h1>
+        <input type="submit" value="Abrir">
+    </div>
+{% endfor %}
+    <script src="article.js"></script>
+{% endblock %}

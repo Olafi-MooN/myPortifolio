@@ -4,6 +4,7 @@ const projetos = require('./projetos');
 const sobre = require('./sobre');
 const login = require('./login');
 const addproj = require('./addproj');
+const artigos = require('./artigos')
 
 routes.get('/', sobre.get);
 routes.post('/', sobre.post);
@@ -21,5 +22,8 @@ routes.get('/login', login.get);
 routes.post('/login', login.post);
 routes.get('/login/alterarSenha', addproj.getLogin);
 routes.post('/login/alterarSenha', login.postLogin);
+
+routes.get('/artigos', artigos.get);
+routes.get('/articles/:id', artigos.getArticle);
 
 module.exports = routes;
